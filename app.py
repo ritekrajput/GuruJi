@@ -32,4 +32,4 @@ def generate_response(prompt):
         print("error:",response.text)
 
 interface = gr.Interface(fn=generate_response,inputs=gr.Textbox(lines=4,placeholder="Enter your prompt here..."),outputs="text")
-interface.launch()
+interface.launch(share=True)
